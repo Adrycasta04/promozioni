@@ -47,7 +47,7 @@
 
         /* Container ora più largo per Desktop */
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -78,8 +78,8 @@
         /* Grid Layout per le Offerte - Il cuore della responsività */
         .offers-list {
             display: grid;
-            /* Si adatta automaticamente: 1 colonna su mobile, fino a 3 su desktop */
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* Si adatta automaticamente: 1 colonna su mobile, fino a 4 su desktop */
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 24px;
         }
 
@@ -249,10 +249,10 @@
 
         .telegram-banner .tg-sub {
             display: block;
-            font-size: 14px;
-            font-weight: 500;
-            opacity: 0.92;
-            margin-top: 4px;
+            font-size: 17px;
+            font-weight: 600;
+            opacity: 0.95;
+            margin-top: 6px;
         }
 
         /* Footer / Disclaimer */
@@ -310,13 +310,16 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
+            flex-wrap: wrap;
+            row-gap: 8px;
         }
 
         .code-value {
-            font-size: 20px;
+            font-size: clamp(14px, 3.5vw, 20px);
             color: #0052cc;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             font-family: monospace;
+            word-break: break-all;
         }
 
         .copy-btn {
@@ -395,8 +398,6 @@
                     <p class="referral-hint ca">🚀 Fino a 400€ invitando amici</p>
                 </div>
 
-                <p style="font-size: 13px; font-weight: 700; color: #b30000; text-align: center; margin-bottom: 20px;">⏰ Promo prorogata: apri il conto entro il 31/08/2026</p>
-
                 <p style="font-size: 14px; color: var(--text-muted); text-align: center; margin-bottom: 20px;">Il codice amico è già incluso nel link: clicca il bottone e il codice viene applicato in automatico.</p>
 
                 <a href="https://www.credit-agricole.it/invito?mgm=ELEOBALL112A" target="_blank" class="cta-button btn-ca">Apri e Riscatta 50€</a>
@@ -435,8 +436,6 @@
                     <span class="badge bbva">Bonus 10€</span>
                     <p class="referral-hint bbva">🚀 Fino a 200€ invitando amici</p>
                 </div>
-
-                <p style="font-size: 14px; color: var(--text-muted); text-align: center; margin-bottom: 12px;">Copia il codice e inseriscilo in App BBVA durante la registrazione.</p>
 
                 <!-- Box Codice Amico BBVA -->
                 <div class="code-box">
